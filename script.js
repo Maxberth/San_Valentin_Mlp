@@ -1,12 +1,11 @@
-const btnNo = document.querySelector("#btn-random")
+const btnNo = document.querySelector("#btn-random");
 
 function moverAleatoriamente(btn) {
     btn.style.position = "absolute";
-    btn.style.fontWeight = "bolder";
-    btn.style.top = Math.floor(Math.random() * 90 + 5) + "%"
-    btn.style.left = Math.floor(Math.random() * 90 + 5) + "%"
+    btn.style.top = Math.random() * 80 + "%";
+    btn.style.left = Math.random() * 80 + "%";
 }
 
 btnNo.addEventListener("mouseenter", function (e) {
-    moverAleatoriamente(e.target)
-})
+    moverAleatoriamente(e.target);
+});
